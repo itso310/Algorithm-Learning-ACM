@@ -10,6 +10,7 @@ public class P1000 {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
+		sc.close();
 		boolean fa = isValid(a);
 		boolean fb = isValid(b);
 		if(fa && fb) {

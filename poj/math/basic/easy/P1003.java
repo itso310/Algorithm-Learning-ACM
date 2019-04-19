@@ -13,9 +13,9 @@ import java.util.Scanner;
 
 public class P1003 {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		List<Float> inList = new ArrayList<Float>();
-		String snum = scan.next();
+		String snum = sc.next();
 		while(!snum.equals("0.00")) {
 			boolean flag = isValid(snum);
 //			System.out.println(flag);
@@ -25,8 +25,9 @@ public class P1003 {
 			else {
 				System.out.println("This is a no valid num");
 			}
-			snum = scan.next();
+			snum = sc.next();
 		}
+		sc.close();
 		if(inList.size() > 0) {
 			List<Integer> numList = getAllCardsNum(inList);
 			for (Integer num : numList) {
